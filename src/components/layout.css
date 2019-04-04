@@ -66,3 +66,22 @@
   color: var(--brandColor);
   text-decoration: none;
 }
+
+.featuresContainer {
+  width: 100%;
+  background: var(--brandColor);
+  color: #fff;
+  margin-top: 5%;
+  padding: 4em 0 2em;
+  border-top-left-radius: 40px;
+  transform: skewY(-2deg);
+}
+
+.featureItemContainer {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  transform: skewY(2deg);
+}

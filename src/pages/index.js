@@ -4,7 +4,9 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Landing from "../components/Landing"
+import Features from "../components/Features"
 import Menu from "../components/Menu"
+import Title from "../components/Title"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -13,6 +15,13 @@ const IndexPage = ({ data }) => (
       img={data.img.childImageSharp.fluid}
       backgroundStyle="backgroundContainer"
     />
+    <div className="container">
+      <Title
+        title="Multi-Functional Paracord Bracelet"
+        titleStyle="brandColor py-3"
+      />
+    </div>
+    <Features />
     <Menu items={data.menu} />
   </Layout>
 )
