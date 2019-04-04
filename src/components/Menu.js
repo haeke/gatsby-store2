@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Image from "gatsby-image"
+import { Link } from "gatsby"
 
 import Title from "./Title"
 
@@ -7,8 +8,6 @@ import Title from "./Title"
 const Menu = ({ items }) => {
   /// the list of items that we will display when we filter items
   const [menuItems, updateMenuItems] = useState(items.edges)
-  // the list of all the menu items
-  const [allItems, updateAllItems] = useState(items.edges)
   useEffect(() => {
     updateMenuItems(items.edges)
   }, [items.edges])
@@ -20,27 +19,26 @@ const Menu = ({ items }) => {
         <div className="container">
           <div className="row">
             {menuItems.map(({ node }) => (
-              <div
-                key={node.id}
-                className="col-10 col-md-6 my-3 d-flex mx-auto"
-              >
-                <div>
-                  <Image fixed={node.image.fixed} />
-                </div>
-                {/* menu item information */}
-                <div className="flex-grow-1 px-3">
-                  <div className="d-flex justify-content-between">
-                    <h6 className="mb-0">
-                      <small>{node.name}</small>
-                    </h6>
-                    <h6 className="mb-0 text-yellow">
-                      <small>${node.price}</small>
-                    </h6>
+              <div className="col-10 col-md-6 my-3 d-flex mx-auto">
+                <Link to="/item" key={node.id} state={{ node }}>
+                  <div>
+                    <Image fixed={node.image.fixed} />
                   </div>
-                  <p className="text-muted">
-                    <small>{node.description.description}</small>
-                  </p>
-                </div>
+                  {/* menu item information */}
+                  <div className="flex-grow-1 px-3">
+                    <div className="d-flex justify-content-between">
+                      <h6 className="mb-0">
+                        <small>{node.name}</small>
+                      </h6>
+                      <h6 className="mb-0 text-yellow">
+                        <small>${node.price}</small>
+                      </h6>
+                    </div>
+                    <p className="text-muted">
+                      <small>{node.description.description}</small>
+                    </p>
+                  </div>
+                </Link>
               </div>
             ))}
           </div>
