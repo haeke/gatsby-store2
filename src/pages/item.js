@@ -13,7 +13,7 @@ const Item = props => {
   return (
     <>
       <NavBar />
-      <section>
+      <section className="fullHeight">
         <div className="container">
           <div className="row">
             <div className="col-sm">
@@ -25,25 +25,25 @@ const Item = props => {
                 <div className="row">
                   <div className="col-sm">
                     <div className="px-3">
-                      <p>{node.name}</p>
+                      <p className="menuName">{node.name}</p>
                     </div>
                   </div>
                   <div className="col-sm">
                     <div className="px-3">
-                      <p>${node.price}</p>
+                      <p className="menuPrice">${node.price}</p>
                     </div>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-sm">
-                    <p className="p-3">{node.description.description}</p>
+                    <p className="p-3 menuDescription">
+                      {node.description.description}
+                    </p>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-sm">
-                    <div className="p-3">
-                      <button className="btn btn-block">add to cart +</button>
-                    </div>
+                    <button className="menuButton">add to cart +</button>
                   </div>
                 </div>
               </div>

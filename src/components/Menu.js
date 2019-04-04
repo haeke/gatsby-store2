@@ -39,7 +39,7 @@ const Menu = ({ items }) => {
                         <small>{node.name}</small>
                       </h6>
                       <h6 className="mb-0 text-yellow">
-                        <small>${node.price}</small>
+                        <small className="menuPrice">${node.price}</small>
                       </h6>
                     </div>
                     <p className="text-muted">

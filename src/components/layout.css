@@ -1,12 +1,47 @@
 :root {
-  --brandColor: #333842;
-  --altBrandColor: #f8ef2d;
+  --brandColor: #004696;
+  --altBrandColor: #f9680c;
+  --mainBlue: #004696;
   --mainGray: #ece8dc;
   --mainBlack: #000000;
 }
 
+.fullHeight {
+  height: 100vh;
+}
+
 .brandColor {
   color: var(--brandColor);
+}
+
+.menuName {
+  color: var(--mainBlack);
+  font-weight: 900;
+}
+
+.menuPrice {
+  color: var(--altBrandColor);
+  font-weight: 900;
+}
+
+.menuDescription {
+  color: var(--mainBlack);
+  font-weight: 600;
+}
+
+.menuButton {
+  border: none;
+  padding: 15px 10px;
+  width: 100%;
+  background: var(--altBrandColor);
+  color: white;
+  text-transform: uppercase;
+  transform: all 0.5s ease-in-out;
+}
+
+.menuButton:hover {
+  cursor: pointer;
+  background: var(--mainBlue);
 }
 
 .backgroundContainer {
