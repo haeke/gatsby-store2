@@ -2,6 +2,7 @@
   --brandColor: #004696;
   --altBrandColor: #f9680c;
   --mainBlue: #004696;
+  --mainWhite: #ffffff;
   --mainGray: #ece8dc;
   --mainBlack: #000000;
 }
@@ -84,4 +85,17 @@
   justify-content: baseline;
   align-items: center;
   transform: skewY(2deg);
+}
+
+.aboutContainer {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutHeader {
+  color: var(--mainWhite);
+  background: var(--altBrandColor);
+  padding: 15px 10px;
 }

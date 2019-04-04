@@ -43,7 +43,17 @@ const Item = props => {
                 </div>
                 <div className="row">
                   <div className="col-sm">
-                    <button className="menuButton">add to cart +</button>
+                    <button
+                      className="menuButton snipcart-add-item"
+                      data-item-id={node.id}
+                      data-item-name={node.name}
+                      data-item-image={node.image.fixed.src}
+                      data-item-price={node.price}
+                      data-item-description={node.title}
+                      data-item-url="http://localhost"
+                    >
+                      add to cart +
+                    </button>
                   </div>
                 </div>
               </div>
