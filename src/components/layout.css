@@ -1,8 +1,12 @@
 :root {
-  --brandColor: #2d1ef1;
-  --altBrandColor: #ff9e09;
+  --brandColor: #333842;
+  --altBrandColor: #f8ef2d;
   --mainGray: #ece8dc;
   --mainBlack: #000000;
+}
+
+.brandColor {
+  color: var(--brandColor);
 }
 
 .backgroundContainer {
@@ -13,13 +17,17 @@
 }
 
 .titleHeader {
+  background: var(--brandColor);
+  padding: 20px 10px;
   color: white;
 }
 
 .menuLink {
+  color: var(--brandColor);
   text-decoration: none;
 }
 
 .menuLink:hover {
+  color: var(--brandColor);
   text-decoration: none;
 }

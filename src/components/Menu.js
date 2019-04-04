@@ -16,7 +16,7 @@ const Menu = ({ items }) => {
     return (
       <section className="menu py-5">
         <div className="container">
-          <Title title="Bracelets" />
+          <Title title="Bracelets" titleStyle="brandColor" />
           <div className="row">
             {menuItems.map(({ node }) => (
               <div className="col-10 col-md-6 my-3 d-flex mx-auto">

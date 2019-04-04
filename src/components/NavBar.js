@@ -34,7 +34,7 @@ const NavBar = () => {
   }
   return (
     <nav className="navbar navbar-expand-sm bg-light navbar-light">
-      <Link to="/" className="navbar-brand">
+      <Link to="/" className="px-4 navbar-brand">
         <img src={logo} alt="logo" style={{ height: 50, width: 50 }} />
       </Link>
       <button
@@ -45,7 +45,7 @@ const NavBar = () => {
         <span className="navbar-toggler-icon" />
       </button>
       <div className={`${cssClasses}`}>
-        <ul className="navbar-nav mx-auto">
+        <ul className="navbar-nav ml-auto">
           {navBarLinks.map(navLink => (
             <li className="nav-item" key={navLink.id}>
               <Link className="nav-link text-capitalize" to={navLink.path}>
