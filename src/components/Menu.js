@@ -19,7 +19,10 @@ const Menu = ({ items }) => {
           <Title title="Bracelets" titleStyle="brandColor" />
           <div className="row">
             {menuItems.map(({ node }) => (
-              <div className="col-10 col-md-6 my-3 d-flex mx-auto">
+              <div
+                key={node.id}
+                className="col-10 col-md-6 my-3 d-flex mx-auto"
+              >
                 <Link
                   className="menuLink"
                   to="/item"

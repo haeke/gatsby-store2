@@ -12,7 +12,7 @@ const Landing = ({ img, backgroundStyle }) => {
 }
 
 Landing.propTypes = {
-  img: PropTypes.string,
+  img: PropTypes.object,
   backgroundStyle: PropTypes.string,
 }
 
