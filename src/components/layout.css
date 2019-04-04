@@ -1,0 +1,25 @@
+:root {
+  --brandColor: #2d1ef1;
+  --altBrandColor: #ff9e09;
+  --mainGray: #ece8dc;
+  --mainBlack: #000000;
+}
+
+.backgroundContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.titleHeader {
+  color: white;
+}
+
+.menuLink {
+  text-decoration: none;
+}
+
+.menuLink:hover {
+  text-decoration: none;
+}

@@ -9,7 +9,10 @@ import Menu from "../components/Menu"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Landing img={data.img.childImageSharp.fluid} />
+    <Landing
+      img={data.img.childImageSharp.fluid}
+      backgroundStyle="backgroundContainer"
+    />
     <Menu items={data.menu} />
   </Layout>
 )

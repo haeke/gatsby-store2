@@ -15,12 +15,17 @@ const Menu = ({ items }) => {
   if (menuItems.length > 0) {
     return (
       <section className="menu py-5">
-        <Title title="Bracelets" />
         <div className="container">
+          <Title title="Bracelets" />
           <div className="row">
             {menuItems.map(({ node }) => (
               <div className="col-10 col-md-6 my-3 d-flex mx-auto">
-                <Link to="/item" key={node.id} state={{ node }}>
+                <Link
+                  className="menuLink"
+                  to="/item"
+                  key={node.id}
+                  state={{ node }}
+                >
                   <div>
                     <Image fixed={node.image.fixed} />
                   </div>

@@ -6,7 +6,9 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-10 mx-auto text-capitalize">
-            <h3>All Rights Reserved &copy; {new Date().getFullYear()} </h3>
+            <h3 className="text-center">
+              All Rights Reserved &copy; {new Date().getFullYear()}{" "}
+            </h3>
           </div>
         </div>
       </div>

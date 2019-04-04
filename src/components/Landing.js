@@ -5,8 +5,8 @@ import Title from "./Title"
 
 const Landing = ({ img, backgroundStyle }) => {
   return (
-    <BackgroundImage fluid={img} backgroundStyle={backgroundStyle} as="section">
-      <Title title="Camping Supplies" />
+    <BackgroundImage fluid={img} className={backgroundStyle} Tag="section">
+      <Title title="Camping Supplies" titleStyle="titleHeader" />
     </BackgroundImage>
   )
 }
