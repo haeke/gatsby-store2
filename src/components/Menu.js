@@ -46,7 +46,7 @@ const Menu = ({ items }) => {
                     data-item-image={node.image.fixed.src}
                     data-item-price={node.price}
                     data-item-description={node.title}
-                    data-item-url="http://localhost"
+                    data-item-url="https://stupefied-pasteur-cff4c4.netlify.com"
                   >
                     add to cart +
                   </button>
