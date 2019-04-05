@@ -23,30 +23,34 @@ const Menu = ({ items }) => {
                 key={node.id}
                 className="col-10 col-md-6 my-3 d-flex mx-auto"
               >
-                <Link
-                  className="menuLink"
-                  to="/item"
-                  key={node.id}
-                  state={{ node }}
-                >
-                  <div>
-                    <Image fixed={node.image.fixed} />
+                <div>
+                  <Image fixed={node.image.fixed} />
+                </div>
+                {/* menu item information */}
+                <div className="flex-grow-1 px-3">
+                  <div className="d-flex justify-content-between">
+                    <h6 className="mb-0">
+                      <small>{node.name}</small>
+                    </h6>
+                    <h6 className="mb-0 text-yellow">
+                      <small className="menuPrice">${node.price}</small>
+                    </h6>
                   </div>
-                  {/* menu item information */}
-                  <div className="flex-grow-1 px-3">
-                    <div className="d-flex justify-content-between">
-                      <h6 className="mb-0">
-                        <small>{node.name}</small>
-                      </h6>
-                      <h6 className="mb-0 text-yellow">
-                        <small className="menuPrice">${node.price}</small>
-                      </h6>
-                    </div>
-                    <p className="text-muted">
-                      <small>{node.description.description}</small>
-                    </p>
-                  </div>
-                </Link>
+                  <p className="text-muted">
+                    <small>{node.description.description}</small>
+                  </p>
+                  <button
+                    className="menuButton snipcart-add-item"
+                    data-item-id={node.id}
+                    data-item-name={node.name}
+                    data-item-image={node.image.fixed.src}
+                    data-item-price={node.price}
+                    data-item-description={node.title}
+                    data-item-url="http://localhost"
+                  >
+                    add to cart +
+                  </button>
+                </div>
               </div>
             ))}
           </div>
