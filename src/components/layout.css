@@ -99,3 +99,17 @@
   background: var(--altBrandColor);
   padding: 15px 10px;
 }
+
+.aboutWrapper {
+  width: 100%;
+  background: var(--altBrandColor);
+  color: #fff;
+  margin-top: 2%;
+  padding: 4em 0 2em;
+  transform: skewY(-2deg);
+}
+
+.mainWhite {
+  color: var(--mainWhite);
+  transform: skewY(2deg);
+}
