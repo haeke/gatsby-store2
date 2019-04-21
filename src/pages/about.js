@@ -22,7 +22,7 @@ const About = ({ data }) => {
           <div className="container">
             <div className="row">
               <div className="col-sm">
-                <p className="py-4 text-muted mainWhite">
+                <p className="py-4 mainWhite">
                   A Paracord Bracelet is a bracelet woven out of paracord.
                   Paracord bracelets are also known as survival bracelets, 550
                   cord bracelets, or parachute cord bracelets and are considered
