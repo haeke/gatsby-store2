@@ -15,6 +15,15 @@
   color: var(--brandColor);
 }
 
+.mainWhiteText {
+  color: var(--mainWhite);
+  font-weight: 300;
+}
+
+.orangeBackground {
+  background: var(--altBrandColor);
+}
+
 .menuName {
   color: var(--mainBlack);
   font-weight: 900;
