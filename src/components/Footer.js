@@ -48,7 +48,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="mainWhiteText text-capitalize" to="/">
+                  <Link className="mainWhiteText text-capitalize" to="/about">
                     About
                   </Link>
                 </li>
