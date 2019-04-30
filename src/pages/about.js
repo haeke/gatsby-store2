@@ -20,8 +20,21 @@ const About = ({ data }) => {
         </Image>
         <div className="aboutWrapper">
           <div className="container">
-            <div className="row">
-              <div className="col-sm">
+            <div className="row py-4">
+              <div className="col-md-6 col-sm-12">
+                <p className="py-4 mainWhite">
+                  A Paracord Bracelet is a bracelet woven out of paracord.
+                  Paracord bracelets are also known as survival bracelets, 550
+                  cord bracelets, or parachute cord bracelets and are considered
+                  a survival tool. The bracelets are worn by survivalists,
+                  hikers, climbers, campers, or anyone who enjoys the outdoors.
+                  These bracelets become extremely handy in survival or
+                  emergency situations. The cord itself is made up of 7 inner
+                  strands which each contain 3 inner strands of their own, which
+                  give you a ton of cord to play around with.
+                </p>
+              </div>
+              <div className="col-md-6 col-sm-12">
                 <p className="py-4 mainWhite">
                   A Paracord Bracelet is a bracelet woven out of paracord.
                   Paracord bracelets are also known as survival bracelets, 550

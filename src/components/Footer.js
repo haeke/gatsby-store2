@@ -7,7 +7,7 @@ import pinterestLogo from "../images/pinterest.svg"
 
 const Footer = () => {
   return (
-    <footer className="footer orangeBackground py-3">
+    <footer className="orangeBackground py-3">
       <div className="col-md-12">
         <div className="row">
           <div className="col-md-6 text-capitalize text-center">
@@ -18,27 +18,39 @@ const Footer = () => {
           </div>
           <div className="col-md-6">
             <div className="socials text-left">
-              <Link to="https://www.facebook.com">
+              <a
+                href="https://www.facebook.com"
+                rel="nonopener noreferrer"
+                target="_blank"
+              >
                 <img
                   src={facebookLogo}
                   alt="facebook icon"
                   style={{ height: 30, width: 30, margin: "20px 10px" }}
                 />
-              </Link>
-              <Link to="https://www.instagram.com">
+              </a>
+              <a
+                href="https://www.instagram.com"
+                rel="nonopener noreferrer"
+                target="_blank"
+              >
                 <img
                   src={instaLogo}
                   alt="instagram icon"
                   style={{ height: 30, width: 30, margin: "0 10px" }}
                 />
-              </Link>
-              <Link to="https://www.pinterest.com">
+              </a>
+              <a
+                href="https://www.pinterest.com"
+                rel="nonopener noreferrer"
+                target="_blank"
+              >
                 <img
                   src={pinterestLogo}
                   alt="pinterest icon"
                   style={{ height: 30, width: 30, margin: "0 10px" }}
                 />
-              </Link>
+              </a>
             </div>
             <div className="links">
               <ul className="navbar-nav ml-auto">

@@ -29,16 +29,16 @@ const Menu = ({ items }) => {
                 {/* menu item information */}
                 <div className="flex-grow-1 px-3">
                   <div className="d-flex justify-content-between">
-                    <h6 className="mb-0">
-                      <small>{node.name}</small>
-                    </h6>
-                    <h6 className="mb-0 text-yellow">
-                      <small className="menuPrice">${node.price}</small>
-                    </h6>
+                    <div className="mb-0">
+                      <h6 className="brandColor">{node.name}</h6>
+                    </div>
+                    <div className="mb-0">
+                      <h6 className="menuPrice">${node.price}</h6>
+                    </div>
                   </div>
-                  <p className="text-muted">
-                    <small>{node.description.description}</small>
-                  </p>
+                  <div className="text-muted">
+                    <h6>{node.description.description}</h6>
+                  </div>
                   <button
                     className="menuButton snipcart-add-item"
                     data-item-id={node.id}
