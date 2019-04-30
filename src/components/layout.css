@@ -120,5 +120,8 @@
 
 .mainWhite {
   color: var(--mainWhite);
+}
+
+.skewY {
   transform: skewY(2deg);
 }
