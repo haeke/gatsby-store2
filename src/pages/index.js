@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Landing from "../components/Landing"
 import Features from "../components/Features"
+import Carousel from "../components/Carousel"
 import Menu from "../components/Menu"
 import Title from "../components/Title"
 
@@ -22,6 +23,7 @@ const IndexPage = ({ data }) => (
       />
     </div>
     <Features />
+    <Carousel />
     <Menu items={data.menu} />
   </Layout>
 )
